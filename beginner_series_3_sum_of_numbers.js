@@ -16,4 +16,3 @@
 
 
 const geSum = (a, b) => a > b ? getSum(b,a) : a == b ? a : a + getSum(a + 1, b)
-}

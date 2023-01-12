@@ -15,9 +15,5 @@
 // Your function should only return a number, not the explanation about how you get that number.
 
 
-function getSum(a, b){
-  if (a > b) {
-    [a, b] = [b, a]
-  }  
-  return a == b ? a : a + getSum(a + 1, b)
+const geSum = (a, b) => a > b ? getSum(b,a) : a == b ? a : a + getSum(a + 1, b)
 }

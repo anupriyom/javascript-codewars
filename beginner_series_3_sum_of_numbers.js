@@ -15,4 +15,6 @@
 // Your function should only return a number, not the explanation about how you get that number.
 
 
-const geSum = (a, b) => a > b ? getSum(b,a) : a == b ? a : a + getSum(a + 1, b)
+const getSum = (a, b) => a > b ? getSum(b,a) : a == b ? a : a + getSum(a + 1, b);
+
+const getSum2 = (a, b) => a > b ? getSum(b,a) : (b - a + 1) * (a + b) / 2
